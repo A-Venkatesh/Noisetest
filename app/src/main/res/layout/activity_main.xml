@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.venkateshalive.noisetest.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="129dp">
+
+
+        <TextView
+            android:id="@+id/nois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_above="@+id/noismaxText"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="75dp" />
+
+
+        <TextView
+            android:id="@+id/noismaxText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_below="@+id/nois"
+            app:layout_constraintBaseline_creator="@+id/nois"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="281dp" />
+
+        <TextView
+            android:id="@+id/noisminText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_below="@+id/noismaxText"
+            app:layout_constraintBottom_toBottomOf="@+id/noismaxText"
+            tools:layout_editor_absoluteX="274dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
